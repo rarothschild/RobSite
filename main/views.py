@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import FileResponse
+import os
 
 # Create your views here.
 def home(request):
@@ -10,3 +12,10 @@ def projects(request):
 
 def resume(request):
     return render(request,'main/resume.html')
+
+def contact(request):
+    return render(request,'main/contact.html')
+
+def show_pdf(request):
+    filepath = os.path.join('static','images', 'RothschildResume.pdf')
+    return FileResponse(open(filepath, 'rb'), content_type='application/pdf')

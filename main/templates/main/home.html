@@ -1,5 +1,9 @@
 {% extends 'main/main.html' %}
+{% load static %}
 
 {% block content %}
-<h1>Welcome to my site</h1>
+<div class="about-me">
+    <img id="profile-picture" src="{% static 'images/RobPicMain.jpg' %}">
+    <h1>Welcome to my site</h1>
+</div>
 {% endblock content %}

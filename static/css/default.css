@@ -1,0 +1,113 @@
+:root{
+	--mainColor:#8158af;
+	--secondaryColor:#fff;
+
+	--borderColor:#c1c1c1;
+
+	--mainText:black;
+	--secondaryText:#4b5156;
+
+	--themeDotBorder:#24292e;
+
+	--previewBg:rgb(251, 249, 243, 0.8);
+	--previewShadow:#f0ead6;
+
+
+	--buttonColor:black;
+
+
+}
+
+html, body{
+    background-color: var(--mainColor);
+	padding-top: 300;
+	margin: 0 auto;
+	scroll-behavior: smooth;
+    padding: 30px 50px 75px;
+}
+
+.main-container{
+    border: 2px solid rgb(0, 0, 0);
+    border-bottom: none;
+	background-color: var(--mainColor);
+	overflow:auto;
+}
+
+#profile-picture{
+    display: block;
+    margin:0 auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+/* Navbar */
+
+.navbar-container{
+    background-color: rgb(10, 12, 14);
+}
+
+.navbar-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.navbar-container li {
+    float: left;
+  }
+
+.navbar-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.navbar-container li a:hover {
+    background-color: rgb(184, 32, 32);
+  }
+
+/* Navbar lvl2 */
+
+.navbar-container-2{
+    background-color: rgb(31, 39, 46);
+}
+
+.navbar-container-2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.navbar-container-2 li {
+    float: left;
+  }
+
+.navbar-container-2 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.navbar-container-2 li a:hover {
+    background-color: rgb(153, 47, 28);
+  }
+
+  /* Main page content */
+
+.page-content {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-top: none;
+  }
+
+.about-me {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+  }
