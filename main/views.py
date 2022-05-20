@@ -16,6 +16,9 @@ def resume(request):
 def contact(request):
     return render(request,'main/contact.html')
 
+def project_overview(request):
+    return render(request,'main/contact.html')
+
 def show_pdf(request):
     filepath = os.path.join('static','images', 'RothschildResume.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
