@@ -1,6 +1,7 @@
 :root{
-	--mainColor:#8158af;
-	--secondaryColor:#fff;
+	--backgroundColor: #8158af;
+  --mainColor:#9e76ca;
+	--secondaryColor:#5a2691;
 
 	--borderColor:#c1c1c1;
 
@@ -12,25 +13,17 @@
 	--previewBg:rgb(251, 249, 243, 0.8);
 	--previewShadow:#f0ead6;
 
-
 	--buttonColor:black;
-
 
 }
 
 html, body{
-    background-color: var(--mainColor);
-	padding-top: 300;
-	margin: 0 auto;
-	scroll-behavior: smooth;
+    background-color: var(--backgroundColor);
+	  padding-top: 300;
+	  margin: 0 auto;
+	  scroll-behavior: smooth;
     padding: 30px 50px 75px;
-}
-
-.main-container{
-    border: 2px solid rgb(0, 0, 0);
-    border-bottom: none;
-	background-color: var(--mainColor);
-	overflow:auto;
+    font-family: Arial;
 }
 
 #profile-picture{
@@ -39,6 +32,39 @@ html, body{
     height: 200px;
     width: 200px;
     object-fit: cover;
+}
+
+.main-container{
+  border: 2px solid rgb(1, 0, 0);
+}
+
+.page-content {
+  border: 2px solid rgb(1, 0, 0);
+  padding: 10px;
+  margin: 10px;
+}
+
+.home-wrapper{
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		'left-column right-column'
+	;
+}
+
+.left-column{
+	grid-area: left-column;
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+
+.right-column{
+	grid-area: right-column;
+	display: grid;
+	align-content: center;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 /* Navbar */
@@ -100,14 +126,4 @@ html, body{
   }
 
   /* Main page content */
-
-.page-content {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 5px;
-    border-top: none;
-  }
-
-.about-me {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 10px;
-  }
+  

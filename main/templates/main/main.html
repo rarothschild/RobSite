@@ -2,23 +2,20 @@
 {% load static %}
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+        
         <title>Robert Rothschild</title>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+
     </head>
     <body>
         <div class="main-container">
-            
             {% include 'main/navbar.html' %}
-            
-            {% block subnav %}
-
-            {% endblock subnav %}
-
-        </div>
-        <div class="page-content">
+        
             {% block content %}
-
+        
             {% endblock content %}
         </div>
+
     </body>
 </html>

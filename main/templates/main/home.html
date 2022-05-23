@@ -2,9 +2,19 @@
 {% load static %}
 
 {% block content %}
-<div class="about-me">
-    <img id="profile-picture" src="{% static 'images/RobPicMain.jpg' %}">
-    <h1>About Me</h1>
-    <p>California born, Colorado raised, and PNW living</p>
+
+
+<div class="page-content">
+    <div class="home-wrapper">
+        <div class="left-column">
+            <img id="profile-picture" src="{% static 'images/RobPicMain.jpg' %}">
+        </div>
+        <div class="right-column">
+            <h1>About Me</h1>
+            <p>California born, Colorado raised, and PNW living</p>
+            <p>{% lorem %}</p>
+        </div>
+    </div>
 </div>
+
 {% endblock content %}
