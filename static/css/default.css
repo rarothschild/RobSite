@@ -3,7 +3,7 @@
   --mainColor:#9e76ca;
 	--secondaryColor:#5a2691;
 
-	--borderColor:#c1c1c1;
+	--borderColor:#000000;
 
 	--mainText:black;
 	--secondaryText:#4b5156;
@@ -35,11 +35,11 @@ html, body{
 }
 
 .main-container{
-  border: 2px solid rgb(1, 0, 0);
+  border: 2px solid var(--borderColor);
 }
 
 .page-content {
-  border: 2px solid rgb(1, 0, 0);
+  border: 2px solid var(--borderColor);
   padding: 10px;
   margin: 10px;
 }
@@ -54,14 +54,13 @@ html, body{
 
 .left-column{
 	grid-area: left-column;
-	padding-top:50px;
-	padding-bottom: 50px;
+  align-self: center;
 }
 
 .right-column{
 	grid-area: right-column;
 	display: grid;
-	align-content: center;
+	align-self: center;
 
 	padding-top: 50px;
 	padding-bottom: 50px;
