@@ -19,6 +19,7 @@
 
 html, body{
     background-color: var(--backgroundColor);
+    border-bottom: none;
 	  padding-top: 300;
 	  margin: 0 auto;
 	  scroll-behavior: smooth;
@@ -32,6 +33,13 @@ html, body{
     height: 200px;
     width: 200px;
     object-fit: cover;
+}
+
+.header-container{
+  height: 0fr;
+  margin: 0;
+  border: 2px solid var(--borderColor);
+  vertical-align: top;
 }
 
 .main-container{
