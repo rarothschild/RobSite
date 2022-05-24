@@ -22,6 +22,9 @@ def projects_trading(request):
 def projects_landtrack(request):
     return render(request,'main/projects_landtrack.html')
 
+def blog(request):
+    return render(request,'main/blog.html')
+
 def show_pdf(request):
     filepath = os.path.join('static','images', 'RothschildResume.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
