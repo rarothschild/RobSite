@@ -14,7 +14,6 @@ from pathlib import Path
 import sys
 import os
 sys.path.insert(1, '..')
-from keys import django_siteKey
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = django_siteKey
+SECRET_KEY = 'django-insecure-!u$xmxsq-yo0@*_9j2hf*m2q^vo^&-&gai$f(cq0ncszji0lup'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
